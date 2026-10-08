@@ -1,0 +1,23 @@
+[workspace]
+members = ["apps/forge-cli", "crates/forge-runtime", "crates/forge-packages"]
+resolver = "3"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.85"
+publish = false
+
+[workspace.dependencies]
+forge-runtime = { path = "crates/forge-runtime" }
+forge-packages = { path = "crates/forge-packages" }
+
+[workspace.lints.rust]
+unsafe_code = "forbid"
+
+[workspace.lints.clippy]
+all = "warn"
+
+[profile.release]
+lto = "thin"
+codegen-units = 1
