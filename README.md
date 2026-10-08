@@ -32,6 +32,11 @@ preserve first-request order, deduplicate targets and reject unsupported names.
 They do not resolve transitive dependencies, pin versions, or perform mutations.
 See [catalog provenance](docs/catalog.md).
 
+## Continue on Windows
+
+Read the [Windows handoff](docs/windows-handoff.md) for setup, current state and
+the ordered PTY implementation tasks.
+
 ## Development
 
 Install Rust stable, then run:

@@ -1,6 +1,8 @@
 # Forge engineering instructions
 
 Read README.md, GLOSSARY.md and the relevant ADR before modifying a module.
+For Windows continuation, read docs/windows-handoff.md. The existing CLI, runtime
+launch and package-plan seams are already confirmed; preserve that agreement.
 Use Matt Pocock's installed TDD skill (`~/.codex/skills/tdd/SKILL.md`). Confirm
 public test seams with the user before writing tests. Implement one failing
 behavior test, observe the expected failure, implement the minimum behavior,
